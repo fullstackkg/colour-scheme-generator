@@ -1,0 +1,25 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#color-scheme-container {
+    display: flex;
+    width: 85%;
+    height: 50vh;
+    margin: 10em auto;
+}
+
+#color-scheme-container > * {
+    flex-grow: 1;
+}
+
+#color-scheme-container div:nth-child(even) {
+    background-color: blueviolet;
+}
+
+#color-scheme-container:nth-child(odd) {
+    background-color: blanchedalmond;
+}
+

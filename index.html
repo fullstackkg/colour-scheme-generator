@@ -7,17 +7,29 @@
     <title>Colour Scheme Generator</title>
 </head>
 <body>
-    <input type="color" name="color" id="color-input">
-    <select name="scheme" id="scheme-input">
-        <option value="monochrome">Monochrome</option>
-        <option value="monochrome-dark">Monochrome-Dark</option>
-        <option value="monochrome-light">Monochrome-Light</option>
-        <option value="analogic">Analogic</option>
-        <option value="complement">Complement</option>
-        <option value="analogic-complement">Analogic-Complement</option>
-        <option value="triad">Triad</option>
-        <option value="quad">Quad</option>
-    </select>
+    <nav>
+        <input type="color" name="color" id="color-input">
+        <select name="scheme" id="scheme-input">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-Dark</option>
+            <option value="monochrome-light">Monochrome-Light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+        <button type="button">Get color scheme</button>
+    </nav>
+    <section>
+        <div id="color-scheme-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
