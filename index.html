@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Colour Scheme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500;700&display=swap" rel="stylesheet">
+    <title>Color Scheme Generator</title>
 </head>
 <body>
-    <nav>
+    <header>
         <input type="color" name="color" id="color-input">
         <select name="scheme" id="scheme-input">
             <option value="monochrome">Monochrome</option>
@@ -20,7 +23,7 @@
             <option value="quad">Quad</option>
         </select>
         <button type="button" class="scheme-btn">Get color scheme</button>
-    </nav>
+    </header>
     <section>
         <div id="color-scheme-container">
             <div id="first-color"></div>
@@ -28,6 +31,13 @@
             <div id="third-color"></div>
             <div id="fourth-color"></div>
             <div id="fifth-color"></div>
+        </div>
+        <div id="hex-value-div">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </section>
     <script src="index.js"></script>

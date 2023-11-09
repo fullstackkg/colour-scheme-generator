@@ -2,6 +2,7 @@ const colorInputEl = document.querySelector("#color-input")
 const schemeSelect = document.querySelector("#scheme-input")
 const colorSchemeBtn = document.querySelector(".scheme-btn")
 const colorContainer = document.querySelector("#color-scheme-container")
+const hexValueDiv = document.querySelector("#hex-value-div")
 const firstColorDiv = document.querySelector("#first-color")
 const secondColorDiv = document.querySelector("#second-color")
 const thirdColorDiv = document.querySelector("#third-color")
@@ -21,6 +22,7 @@ colorSchemeBtn.addEventListener("click", (e) => {
             colors.forEach((color, index) => {
                 let hexValue = color.hex.value
                 colorContainer.children[index].style.backgroundColor = hexValue
+                hexValueDiv.children[index].innerText = hexValue.toUpperCase()
             })
         })
 })
