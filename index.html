@@ -10,21 +10,21 @@
     <title>Color Scheme Generator</title>
 </head>
 <body>
-    <header>
-        <input type="color" name="color" id="color-input">
-        <select name="scheme" id="scheme-input">
-            <option value="monochrome">Monochrome</option>
-            <option value="monochrome-dark">Monochrome-Dark</option>
-            <option value="monochrome-light">Monochrome-Light</option>
-            <option value="analogic">Analogic</option>
-            <option value="complement">Complement</option>
-            <option value="analogic-complement">Analogic-Complement</option>
-            <option value="triad">Triad</option>
-            <option value="quad">Quad</option>
-        </select>
-        <button type="button" class="scheme-btn">Get color scheme</button>
-    </header>
-    <section>
+    <div class="main-container">
+        <div class="selection-styling">
+            <input type="color" name="color" id="color-input">
+            <select name="scheme" id="scheme-input">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-Dark</option>
+                <option value="monochrome-light">Monochrome-Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="button" class="scheme-btn">Get color scheme</button>
+        </div>
         <div id="color-scheme-container">
             <div id="first-color"></div>
             <div id="second-color"></div>
@@ -33,13 +33,13 @@
             <div id="fifth-color"></div>
         </div>
         <div id="hex-value-div">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span>#000000</span>
+            <span>#1A1919</span>
+            <span>#343232</span>
+            <span>#4F4A4A</span>
+            <span>#6A6262</span>
         </div>
-    </section>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
