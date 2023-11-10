@@ -28,6 +28,16 @@ colorSchemeBtn.addEventListener("click", (e) => {
 })
 
 
+let spanEls = document.querySelectorAll("span")
+spanEls.forEach(span => span.addEventListener("click", (e) => {
+    navigator.clipboard.writeText(e.target.innerText)
+    let clipboardEl = document.querySelector("#clipboard")
+    clipboardEl.classList.remove("show")
+    void clipboardEl.offsetWidth
+    clipboardEl.classList.add("show")
+}))
+
+
 
 
 

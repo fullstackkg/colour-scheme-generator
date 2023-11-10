@@ -45,6 +45,10 @@
     width: 70%;
 }
 
+#hex-value-div span {
+    cursor: pointer;
+}
+
 #color-scheme-container div:nth-child(1) {
     background-color: #000000;
 }
@@ -63,5 +67,24 @@
 
 #color-scheme-container div:nth-child(5) {
     background-color: #6A6262;
+}
+
+#clipboard {
+    margin-top: 1em;
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; visibility: hidden; }
+    50% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+  }  
+
+.hidden {
+    animation: none;
+}
+
+.show {
+    animation: fadeInOut 2s ease-in-out forwards;
 }
 
