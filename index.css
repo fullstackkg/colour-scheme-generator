@@ -96,6 +96,7 @@
     #hex-value-div {
         font-size: 0.80rem; 
         margin-top: 0.5em;
+        gap: 0.5em;
     }
 }
 
