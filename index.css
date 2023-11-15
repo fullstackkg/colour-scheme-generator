@@ -93,12 +93,9 @@
         gap: 1em;
     }
 
-    #color-scheme-container {
-        gap: 1em;
-    }
-
     #hex-value-div {
-        gap: 1em; 
+        font-size: 0.80rem; 
+        margin-top: 0.5em;
     }
 }
 
