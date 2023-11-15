@@ -88,3 +88,17 @@
     animation: fadeInOut 2s ease-in-out forwards;
 }
 
+@media (max-width: 600px) {
+    .selection-styling {
+        gap: 1em;
+    }
+
+    #color-scheme-container {
+        gap: 1em;
+    }
+
+    #hex-value-div {
+        gap: 1em; 
+    }
+}
+
